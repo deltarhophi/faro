@@ -3,17 +3,12 @@ services:
   mysql-prototype:
     build: .
     port: 8000
-    env:
-      MYSQL_HOST: ${mysql.service.host}
-      MYSQL_PORT: ${mysql.service.port}
-      MYSQL_USER: ${mysql.database.username}
-      MYSQL_PASSWORD: ${mysql.database.password}
-      MYSQL_DATABASE: ${mysql.database.name}
-    
+    # Ces variables seront automatiquement injectées
+    # quand l'addon sera lié
+
 addons:
   mysql:
     type: mysql
     version: "8.0"
     database:
       name: myapp
-      username: myuser
