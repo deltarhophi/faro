@@ -7,5 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Utilisez main_simple.py pour tester rapidement la connexion
-CMD ["python", "main_simple.py"]
+# Utilisez app.py pour le diagnostic
+CMD ["python", "app.py"]
