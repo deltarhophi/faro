@@ -1,2 +1,1 @@
-mysql-connector-python==8.1.0
-python-dotenv==1.0.0
+# Rien pour l'instant - on teste sans dépendances
